@@ -1,5 +1,5 @@
 import React from "react"
-
+import {Link} from "react-router-dom"
 /**
  * {
     * id: "1", 
@@ -21,6 +21,7 @@ export default function Vans() {
     }, [])
 
     const vanElements = vans.map(van => (
+        <Link to={`/vans/${van.id}`}>
         <div key={van.id} className="van-tile">
             <img src={van.imageUrl} />
             <div className="van-info">
@@ -29,6 +30,7 @@ export default function Vans() {
             </div>
             <i className={`van-type ${van.type} selected`}>{van.type}</i>
         </div>
+        </Link>
     ))
 
     return (
