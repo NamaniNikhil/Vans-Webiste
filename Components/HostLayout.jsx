@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "react-router-dom"
+import { Link , Outlet } from "react-router-dom"
 
 export default function HostLayout() {
 
@@ -7,12 +7,15 @@ export default function HostLayout() {
 
     return 
 
-    (
+    (<>
         <nav>
             <Link to ="/host">Dashboard</Link>
             <Link to = "/host/income">Income</Link>
             <Link to = "/host/Reviews">Reviews</Link>
         </nav>
+        <Outlet />
+    </>
+        
     )
 
 
