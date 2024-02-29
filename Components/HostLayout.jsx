@@ -5,9 +5,9 @@ export default function HostLayout() {
 
 
 
-    return 
+    
 
-    (<>
+    return  (<>
         <nav>
             <Link to ="/host">Dashboard</Link>
             <Link to = "/host/income">Income</Link>
