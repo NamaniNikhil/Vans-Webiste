@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Dashboard(){
+export default function Income(){
 
-    return <h1>Host Dashboard is Here</h1>
+    return <h1>Host Income is Here</h1>
 }
