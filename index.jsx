@@ -12,12 +12,13 @@ import Header from "./Components/Header"
 function App() {
   return (
     <BrowserRouter>
-      
-      <Routes element = {<Header />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/vans" element={<Vans />} />
-        <Route path="/vans/:id" element={<VanDetail />} />
+      <Routes>
+        <Route element={<Header />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/vans" element={<Vans />} />
+          <Route path="/vans/:id" element={<VanDetail />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
