@@ -7,12 +7,13 @@ import Vans from "./pages/Vans"
 import VanDetail from "./pages/VanDetail"
 import "./server"
 import Layout from "./Components/Layout"
+import Header from "./Components/Header"
 
 function App() {
   return (
     <BrowserRouter>
       
-      <Routes element = {<Layout />}>
+      <Routes element = {<Header />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
