@@ -13,9 +13,28 @@ const activenavlinks = {
 
     return  (<>
         <nav className="host-nav">
-            <NavLink   style={({isActive}) => isActive ? activenavlinks : null} to ="/host" end>Dashboard</NavLink>
-            <NavLink  style={({isActive}) => isActive ? activenavlinks : null}  to = "/host/income">Income</NavLink>
-            <NavLink   style={({isActive}) => isActive ? activenavlinks : null}  to = "/host/Reviews">Reviews</NavLink>
+            <NavLink   
+            style={({isActive}) => isActive ? activenavlinks : null} 
+            to ="/host" 
+            end>Dashboard
+            </NavLink>
+            <NavLink  
+            style={({isActive}) => isActive ? activenavlinks : null}  
+            to = "/host/vans">
+                Vans
+                </NavLink>
+
+
+            <NavLink  
+            style={({isActive}) => isActive ? activenavlinks : null}  
+            to = "/host/income">
+                Income
+                </NavLink>
+            <NavLink   
+            style={({isActive}) => isActive ? activenavlinks : null}  
+            to = "/host/Reviews">
+                Reviews
+                </NavLink>
         </nav>
         <Outlet />
     </>
