@@ -22,7 +22,7 @@ import HostVanPhotos from "./pages/Host/HostVanPhotos"
 import NotFound from "./pages/NotFound"
 import Login, { loader as loginLoader, action as loginAction } from "./pages/Login"
 import Layout from "./Layout.jsx"
-import HostLayout from "./components/HostLayout.jsx"
+import HostLayout from "./HostLayout.jsx"
 import Error from "./components/Error"
 import { requireAuth } from "./utils"
 
