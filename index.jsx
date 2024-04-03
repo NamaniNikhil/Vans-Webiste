@@ -23,7 +23,7 @@ import NotFound from "./pages/NotFound"
 import Login, { loader as loginLoader, action as loginAction } from "./pages/Login"
 import Layout from "./Layout.jsx"
 import HostLayout from "./HostLayout.jsx"
-import Error from "./components/Error"
+import Error from "./Error.jsx"
 import { requireAuth } from "./utils"
 
 import "./server"
